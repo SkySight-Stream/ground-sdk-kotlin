@@ -3,4 +3,5 @@
     <string name="take_off">Take off</string>
     <string name="land">Land</string>
     <string name="percentage">%1$d %%</string>
+    <string name="battery_icon">%65</string>
 </resources>

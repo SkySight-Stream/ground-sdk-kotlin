@@ -32,10 +32,12 @@
 
 package com.parrot.hellodrone
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.parrot.drone.groundsdk.GroundSdk
 import com.parrot.drone.groundsdk.ManagedGroundSdk
 import com.parrot.drone.groundsdk.Ref
@@ -121,6 +123,28 @@ class MainActivity : AppCompatActivity() {
         groundSdk = ManagedGroundSdk.obtainSession(this)
         // All references taken are linked to the activity lifecycle and
         // automatically closed at its destruction.
+
+
+        //bottom navigation
+        val bottom_nav_menu = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottom_nav_menu.setOnItemSelectedListener {
+            item ->
+                  when(item.itemId) {
+                      R.id.navigation_home -> {
+                          true
+                      }
+                      R.id.navigation_settings -> {
+                          true
+                      }
+                      R.id.navigation_media -> {
+                          // Navigate to MediaActivity
+                          val intent = Intent(this, MediaActivity::class.java)
+                          startActivity(intent)
+                          true
+                      }
+                      else -> false
+                  }
+        }
     }
 
     override fun onStart() {
