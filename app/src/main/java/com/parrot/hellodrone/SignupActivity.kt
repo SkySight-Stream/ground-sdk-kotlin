@@ -35,7 +35,7 @@ class SignupActivity : AppCompatActivity() {
                 Toast.makeText(this, "Successfully signed up as $username", Toast.LENGTH_SHORT).show()
 
                 // Optionally: navigate to SignInActivity or MainActivity after a successful signup
-                val intent = Intent(this, SignInActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish() // Optionally call finish() to prevent going back to signup
             } else {
