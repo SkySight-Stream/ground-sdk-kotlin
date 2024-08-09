@@ -9,6 +9,10 @@
         android:icon="@drawable/ic_settings"
         android:title="" />
     <item
+        android:id="@+id/navigation_analysis"
+        android:icon="@drawable/ic_analytics"
+        android:title="" />
+    <item
         android:id="@+id/navigation_media"
         android:icon="@drawable/ic_media"
         android:title="" />

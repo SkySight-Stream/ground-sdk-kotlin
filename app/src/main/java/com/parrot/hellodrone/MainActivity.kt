@@ -142,6 +142,12 @@ class MainActivity : AppCompatActivity() {
                           startActivity(intent)
                           true
                       }
+                      R.id.navigation_analysis -> {
+                         // Navigate to AnalyticActivity
+                          val intent = Intent(this, AnalyticActivity::class.java)
+                          startActivity(intent)
+                          true
+                      }
                       else -> false
                   }
         }
