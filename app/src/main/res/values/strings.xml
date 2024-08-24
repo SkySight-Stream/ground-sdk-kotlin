@@ -14,4 +14,7 @@
     <string name="stop_recording">Stop recording</string>
     <string name="image_preview" />
     <string name="gallery_image_preview" />
+    <string name="percentage" />
+    <string name="take_off" />
+    <string name="land" />
 </resources>

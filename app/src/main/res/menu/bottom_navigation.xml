@@ -9,11 +9,11 @@
         android:icon="@drawable/ic_settings"
         android:title="" />
     <item
-        android:id="@+id/navigation_analysis"
-        android:icon="@drawable/ic_analytics"
+        android:id="@+id/navigation_flightplan"
+        android:icon="@drawable/ic_airplanemode"
         android:title="" />
     <item
-        android:id="@+id/navigation_media"
-        android:icon="@drawable/ic_media"
+        android:id="@+id/navigation_camera"
+        android:icon="@drawable/ic_camera"
         android:title="" />
 </menu>

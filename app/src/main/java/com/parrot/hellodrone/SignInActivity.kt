@@ -42,7 +42,7 @@ class SignInActivity : AppCompatActivity() {
                     Log.d("SignInActivity", "SignIn Successful: $email")
 
                     // Redirect to MainActivity
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, CameraActivity::class.java)
                     startActivity(intent)
                     finish() // Close SignInActivity
                 } else {
